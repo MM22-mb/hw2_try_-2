@@ -257,6 +257,15 @@ role["actor_id"] = anne_hathaway["id"]
 role["character_name"] = "Selina Kyle"
 role.save
 
+# Agent
+ari_emanuel = Agent.new
+ari_emanuel["name"] = "Ari Emanuel"
+ari_emanuel.save
+
+# Assign agent to Christian Bale
+christian_bale["agent_id"] = ari_emanuel["id"]
+christian_bale.save
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
